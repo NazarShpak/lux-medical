@@ -57,7 +57,6 @@ export default {
 .result-main-info {
   text-align: left;
   padding-top: 64px;
-  color: #111111;
   display: flex;
   flex-direction: row;
 

@@ -57,7 +57,6 @@ export default {
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
-    color: #111111;
   }
 
   &__title {
@@ -77,7 +76,7 @@ export default {
   }
 
   &__line {
-    height: 3px;
+    height: 2px;
     background-color: #40A7E1;
     margin: 0;
   }
@@ -85,7 +84,6 @@ export default {
   &__other-info {
     font-size: 10px;
     line-height: 29px;
-    color: #111111;
     height: 29px;
     display: flex;
     justify-content: right;

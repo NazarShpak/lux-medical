@@ -8,6 +8,10 @@
             :result="result"
         />
 
+        <conclusion-part
+            class="main-part__conclusion-part"
+        />
+
       </div>
     </div>
   </div>
@@ -15,6 +19,7 @@
 
 <script>
 import ResultsPart from "./results/ResultsPart";
+import ConclusionPart from "./conclusion/ConclusionPart";
 
 export default {
   name: "MainPart",
@@ -36,6 +41,7 @@ export default {
     }
   },
   components: {
+    ConclusionPart,
     ResultsPart
   }
 }
@@ -51,6 +57,10 @@ export default {
     background-size: inherit;
     background-repeat: no-repeat;
     background-position: center -32px;
+  }
+
+  &__results-part {
+    margin-bottom: 65px;
   }
 }
 </style>

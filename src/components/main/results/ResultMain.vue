@@ -40,7 +40,6 @@ export default {
 
 <style lang="scss" scoped>
 .result-main {
-  color: #111111;
   display: flex;
   flex-direction: row;
 

@@ -92,7 +92,6 @@ export default {
     font-weight: bold;
     font-size: 19px;
     line-height: 29px;
-    color: #111111;
   }
 }
 </style>
