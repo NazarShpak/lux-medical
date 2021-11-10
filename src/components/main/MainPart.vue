@@ -12,6 +12,11 @@
             class="main-part__conclusion-part"
         />
 
+        <remark-part
+            class="main-part__remark-part"
+            :result="result"
+        />
+
       </div>
     </div>
   </div>
@@ -20,6 +25,7 @@
 <script>
 import ResultsPart from "./results/ResultsPart";
 import ConclusionPart from "./conclusion/ConclusionPart";
+import RemarkPart from "./remark/RemarkPart";
 
 export default {
   name: "MainPart",
@@ -36,13 +42,16 @@ export default {
         address: ' вул. Підвисоцького, 6а',
         nameOfStudy: 'Коронавірус (SARS - Cov-2), COVID-19, PHK RT-ПЛР-якісний, FTD (терміновий)',
         resultOfStudy: 'Не виявлено',
-        comment: 'Методика RT-ПЛР акредитована відповідно до стандарту ДСТУ ISO 15189'
+        comment: 'Методика RT-ПЛР акредитована відповідно до стандарту ДСТУ ISO 15189',
+        doctor: 'Копацил Мезим Контролокович',
+        dateOfPrinting: '11.09.2021 02:02:02'
       }
     }
   },
   components: {
     ConclusionPart,
-    ResultsPart
+    ResultsPart,
+    RemarkPart
   }
 }
 </script>
