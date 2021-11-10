@@ -18,7 +18,6 @@
         :result="result"
     />
 
-
   </div>
 </template>
 
