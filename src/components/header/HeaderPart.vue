@@ -113,7 +113,7 @@ export default {
 
   &__info {
     height: 57px;
-    width: 1380px;
+    width: 100%;
     background: #F0F0F0;
     border-radius: 3px;
     font-size: 18px;
