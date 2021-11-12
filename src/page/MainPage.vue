@@ -3,20 +3,20 @@
 
     <header-part/>
 
-    <main-part/>
+<!--    <main-part/>-->
 
   </div>
 </template>
 
 <script>
 import HeaderPart from "../components/header/HeaderPart";
-import MainPart from "../components/main/MainPart";
+// import MainPart from "../components/main/MainPart";
 
 export default {
   name: "MainPage",
   components: {
     HeaderPart,
-    MainPart
+    // MainPart
   }
 }
 </script>
