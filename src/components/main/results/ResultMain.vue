@@ -45,6 +45,7 @@ export default {
   &__block-qr {
     width: 250px;
     margin-right: 60px;
+    order: 1;
   }
 
   &__block-qr-title {
@@ -54,5 +55,37 @@ export default {
     padding-bottom: 20px;
   }
 
+  &__result-main-info {
+    order: 2;
+  }
+}
+
+@media (max-width: 428px) {
+  .result-main {
+    justify-content: space-between;
+    position: relative;
+
+    &__block-qr {
+      width: 86px;
+      margin-right: 0;
+      order: 2;
+    }
+
+    &__block-qr-title {
+      font-weight: 300;
+      font-size: 9px;
+      line-height: 11px;
+      padding-bottom: 5px;
+    }
+
+    &__block-qr-img {
+      height: 86px;
+      width: 86px;
+    }
+
+    &__result-main-info {
+      order: 1;
+    }
+  }
 }
 </style>

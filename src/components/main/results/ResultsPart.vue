@@ -48,7 +48,6 @@ export default {
 
 <style lang="scss" scoped>
 .results-part {
-  height: 876px;
   text-align: center;
   padding-top: 68px;
 
@@ -87,6 +86,48 @@ export default {
     height: 29px;
     display: flex;
     justify-content: right;
+  }
+}
+
+@media (max-width: 428px) {
+  .results-part {
+    padding-top: 40px;
+    position: relative;
+
+    &__title,
+    &__subtitle {
+      font-size: 19px;
+      line-height: 23px;
+    }
+
+    &__title {
+      margin-bottom: 6px;
+    }
+
+    &__subtitle {
+      margin-bottom: 40px;
+    }
+
+    &__result-other-info {
+      margin-bottom: 20px;
+    }
+
+    &__line {
+      height: 3px;
+      position: absolute;
+      width: 108%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &__other-info {
+      padding-top: 10px;
+      font-size: 8px;
+      line-height: 5px;
+      height: auto;
+      justify-content: left;
+    }
+
   }
 }
 </style>

@@ -1,19 +1,13 @@
 <template>
   <div class="result-other-info">
 
-    <div
-        class="result-other-info__block"
-        v-for="(info, index) of infos"
-        :key="index"
-    >
-
       <result-other-info-card
           class="result-other-info__result-other-info-card"
+          v-for="(info, index) of infos"
+          :key="index"
           :title="info.title"
           :content="info.content"
       />
-
-    </div>
 
   </div>
 </template>
@@ -58,5 +52,17 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 428px) {
+  .result-other-info {
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+
+    &__result-other-info-card + &__result-other-info-card {
+      margin-top: 35px;
+    }
+  }
 }
 </style>

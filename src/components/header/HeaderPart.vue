@@ -49,11 +49,13 @@
           Гарантія точності та достовірності результатів досліджень!
         </h2>
 
-        <p class="header-part__info">
-          Атестат про акредитацію відповідно до ДСТУ EN ISO <br class="br">15189:2015 (EN ISO 15189: 2012. IDT) ND 30001 від
-          04.09.2020
-          p
-        </p>
+        <div class="header-part__info-block">
+          <p class="header-part__info">
+            Атестат про акредитацію відповідно до ДСТУ EN ISO 15189:2015 (EN ISO 15189: 2012. IDT) ND 30001 від
+            04.09.2020
+            p
+          </p>
+        </div>
 
       </div>
     </div>
@@ -74,10 +76,6 @@ export default {
   background-size: inherit;
   background-repeat: no-repeat;
   background-position: center top;
-
-  .br {
-    display: none;
-  }
 
   &__block-top,
   &__block-bottom {
@@ -128,16 +126,19 @@ export default {
     margin-bottom: 30px;
   }
 
-  &__info {
+  &__info-block {
     height: 57px;
     width: 100%;
     background: #F0F0F0;
     border-radius: 3px;
-    font-size: 18px;
-    line-height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &__info {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -145,13 +146,10 @@ export default {
   .header-part {
     padding-top: 44px;
     background-image: url("../../assets/images/header-top-bg-428.png");
+    position: relative;
 
     .container {
       padding: 0 16px;
-    }
-
-    .br {
-      display: block;
     }
 
     &__block-top {
@@ -204,11 +202,25 @@ export default {
     }
 
     &__info {
-      height: 80px;
       font-weight: 300;
       font-size: 12px;
       line-height: 20px;
       text-align: center;
+      width: 369px;
+    }
+
+    &__info-block {
+      height: 80px;
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .header-part {
+    background-image: url("../../assets/images/header-top-bg-390.png");
+
+    &__info {
+      width: 231px;
     }
   }
 }

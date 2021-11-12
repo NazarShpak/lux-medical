@@ -40,7 +40,6 @@ export default {
 <style lang="scss" scoped>
 .result-other-info-card {
   width: 447px;
-  height: 213px;
 
   .green,
   .red {
@@ -59,6 +58,7 @@ export default {
 
   &__top,
   &__bottom {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -92,6 +92,47 @@ export default {
     font-weight: bold;
     font-size: 19px;
     line-height: 29px;
+  }
+}
+
+@media (max-width: 428px) {
+  .result-other-info-card {
+    width: 100%;
+    height: 174px;
+
+    &__top {
+      width: 100%;
+      height: 57px;
+    }
+
+    .green,
+    .red {
+      font-size: 17px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+      padding-left: 0;
+    }
+
+    &__bottom {
+      width: 100%;
+      height: 117px;
+      text-align: center;
+    }
+
+    &__content {
+      font-size: 17px;
+      line-height: 29px;
+      font-weight: 500;
+      padding-left: 0;
+      width: 290px;
+      text-align: center;
+    }
   }
 }
 </style>

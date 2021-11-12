@@ -2,7 +2,7 @@
   <div class="result-main-info">
 
     <!-- First block -->
-    <div class="result-main-info__block">
+    <div class="result-main-info__block first">
       <ul class="result-main-info__list">
 
         <li class="result-main-info__item">
@@ -21,7 +21,7 @@
     </div>
 
     <!-- Second block -->
-    <div class="result-main-info__block">
+    <div class="result-main-info__block second">
       <ul class="result-main-info__list">
 
         <li class="result-main-info__item">
@@ -70,6 +70,33 @@ export default {
 
   &__block + &__block {
     margin-left: 86px;
+  }
+}
+
+@media (max-width: 428px) {
+  .result-main-info {
+    padding-top: 0;
+    font-size: 14px;
+    line-height: 17px;
+    flex-direction: column;
+
+    .first {
+      width: 200px;
+    }
+
+    &__item + &__item {
+      margin-top: 16px;
+    }
+
+    .full-name {
+      display: inline;
+      font-weight: 500;
+    }
+
+    &__block + &__block {
+      margin-left: 0;
+      margin-top: 56px;
+    }
   }
 }
 </style>
