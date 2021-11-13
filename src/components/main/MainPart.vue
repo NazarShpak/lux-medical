@@ -12,9 +12,9 @@
             :result="result"
         />
 
-<!--        <conclusion-part-->
-<!--            class="main-part__conclusion-part"-->
-<!--        />-->
+        <conclusion-part
+            class="main-part__conclusion-part"
+        />
 
 <!--        <remark-part-->
 <!--            class="main-part__remark-part"-->
@@ -28,7 +28,7 @@
 
 <script>
 import ResultsPart from "./results/ResultsPart";
-// import ConclusionPart from "./conclusion/ConclusionPart";
+import ConclusionPart from "./conclusion/ConclusionPart";
 // import RemarkPart from "./remark/RemarkPart";
 
 export default {
@@ -54,7 +54,7 @@ export default {
   },
   components: {
     ResultsPart,
-    // ConclusionPart,
+    ConclusionPart,
     // RemarkPart
   }
 }
@@ -101,6 +101,10 @@ export default {
 
     &__line-first {
       top: 13.8%;
+    }
+
+    &__results-part {
+      margin-bottom: 40px;
     }
   }
 }
