@@ -18,6 +18,8 @@
         :result="result"
     />
 
+    <hr class="result-main__line">
+
   </div>
 </template>
 
@@ -41,6 +43,10 @@ export default {
 .result-main {
   display: flex;
   flex-direction: row;
+
+  &__line {
+    display: none;
+  }
 
   &__block-qr {
     width: 250px;
@@ -69,6 +75,17 @@ export default {
       width: 86px;
       margin-right: 0;
       order: 2;
+    }
+
+    &__line {
+      display: block;
+      height: 3px;
+      position: absolute;
+      width: 108%;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: #40A7E1;
     }
 
     &__block-qr-title {

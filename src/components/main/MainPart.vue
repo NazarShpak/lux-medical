@@ -1,9 +1,5 @@
 <template>
   <div class="main-part">
-
-    <hr class="main-part__line-first">
-
-
     <div class="container">
       <div class="main-part__block">
 
@@ -16,10 +12,10 @@
             class="main-part__conclusion-part"
         />
 
-<!--        <remark-part-->
-<!--            class="main-part__remark-part"-->
-<!--            :result="result"-->
-<!--        />-->
+        <remark-part
+            class="main-part__remark-part"
+            :result="result"
+        />
 
       </div>
     </div>
@@ -29,7 +25,7 @@
 <script>
 import ResultsPart from "./results/ResultsPart";
 import ConclusionPart from "./conclusion/ConclusionPart";
-// import RemarkPart from "./remark/RemarkPart";
+import RemarkPart from "./remark/RemarkPart";
 
 export default {
   name: "MainPart",
@@ -55,18 +51,14 @@ export default {
   components: {
     ResultsPart,
     ConclusionPart,
-    // RemarkPart
+    RemarkPart
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .main-part {
-  height: 1848px;
-
-  &__line-first {
-    display: none;
-  }
+  min-height: 1848px;
 
   .container {
     padding: 0 16px;
@@ -74,7 +66,7 @@ export default {
 
 
   &__block {
-    height: 1848px;
+    min-height: 1848px;
     background-image: url("../../assets/images/main-bg.png");
     background-size: inherit;
     background-repeat: no-repeat;
@@ -90,17 +82,16 @@ export default {
 @media (max-width: 428px) {
   .main-part {
     position: relative;
+    min-height: 1815px;
 
     &__line-first {
-      display: inline-block;
-      height: 3px;
-      width: 100%;
-      background: #40A7E1;
-      position: absolute;
+      top: 14.1%;
     }
 
-    &__line-first {
-      top: 13.8%;
+    &__block {
+      min-height: 1815px;
+      background-image: url("../../assets/images/main-bg-428.png");
+      background-position: center top;
     }
 
     &__results-part {
